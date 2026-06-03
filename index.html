@@ -1005,6 +1005,397 @@
         align-items: center;
       }
     }
+
+    @media (min-width: 981px) and (max-width: 1180px) {
+  .page-shell {
+    width: min(100% - 30px, var(--max));
+  }
+
+  .hero {
+    padding: 44px 38px;
+  }
+
+  .hero-content {
+    gap: 34px;
+  }
+
+  h1 {
+    font-size: clamp(4.2rem, 8vw, 5.6rem);
+  }
+
+  .map-grid {
+    gap: 16px;
+  }
+
+  .map-card {
+    min-height: 318px;
+  }
+}
+
+@media (min-width: 681px) and (max-width: 980px) {
+  .page-shell {
+    width: min(100% - 28px, var(--max));
+    padding-top: 18px;
+  }
+
+  .topbar {
+    align-items: center;
+    gap: 14px;
+  }
+
+  .brand-lockup {
+    gap: 12px;
+  }
+
+  .seal {
+    width: 52px;
+    height: 52px;
+  }
+
+  .brand-title {
+    font-size: 1.45rem;
+    white-space: normal;
+  }
+
+  .eyebrow {
+    font-size: 0.66rem;
+    letter-spacing: 0.14em;
+  }
+
+  .top-actions {
+    flex-wrap: nowrap;
+    gap: 9px;
+  }
+
+  .theme-toggle,
+  .info-dot {
+    width: 40px;
+    height: 40px;
+  }
+
+  .hero {
+    margin: 30px 0 24px;
+    padding: 34px 28px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+    gap: 26px;
+  }
+
+  .hero-kicker {
+    font-size: 0.7rem;
+    letter-spacing: 0.18em;
+  }
+
+  h1 {
+    font-size: clamp(3.4rem, 9vw, 5rem);
+    line-height: 0.9;
+  }
+
+  .hero-subtitle {
+    max-width: 760px;
+    font-size: 1.08rem;
+  }
+
+  .hero-panel {
+    max-width: 100%;
+    padding: 22px;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 10px;
+  }
+
+  .stat {
+    padding: 12px 10px;
+  }
+
+  .stat strong {
+    font-size: 1.35rem;
+  }
+
+  .stat span {
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+  }
+
+  .control-deck {
+    grid-template-columns: 1fr;
+  }
+
+  .map-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .map-card {
+    min-height: 310px;
+  }
+
+  .footer {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .page-shell {
+    width: min(100% - 18px, var(--max));
+    padding-top: 12px;
+    padding-bottom: 38px;
+  }
+
+  .manor-frame {
+    inset: 6px;
+  }
+
+  .topbar {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 12px 0 14px;
+  }
+
+  .brand-lockup {
+    gap: 10px;
+    min-width: 0;
+  }
+
+  .seal {
+    width: 44px;
+    height: 44px;
+    font-size: 0.82rem;
+  }
+
+  .eyebrow {
+    font-size: 0.56rem;
+    letter-spacing: 0.12em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .brand-title {
+    font-size: 1.16rem;
+    line-height: 1.1;
+    white-space: normal;
+  }
+
+  .top-actions {
+    width: auto;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    gap: 8px;
+  }
+
+  .theme-toggle,
+  .info-dot {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .info-wrap::after {
+    height: 12px;
+  }
+
+  .info-panel {
+    left: auto;
+    right: 0;
+    width: min(300px, calc(100vw - 28px));
+    padding: 13px 14px;
+  }
+
+  .info-panel::before {
+    left: auto;
+    right: 18px;
+  }
+
+  .hero {
+    margin: 18px 0 20px;
+    padding: 20px 14px;
+    border-radius: 20px;
+  }
+
+  .hero::before {
+    inset: 7px;
+    border-radius: 16px;
+  }
+
+  .hero::after {
+    display: none;
+  }
+
+  .hero-content {
+    gap: 18px;
+  }
+
+  .hero-kicker {
+    font-size: 0.62rem;
+    letter-spacing: 0.14em;
+    line-height: 1.45;
+    margin-bottom: 10px;
+  }
+
+  h1 {
+    font-size: clamp(2.25rem, 10.5vw, 2.85rem);
+    line-height: 0.92;
+    letter-spacing: -0.055em;
+  }
+
+  .hero-subtitle {
+    font-size: 0.93rem;
+    line-height: 1.5;
+    margin-top: 16px;
+  }
+
+  .hero-panel {
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .hero-panel::before {
+    font-size: 0.56rem;
+    letter-spacing: 0.09em;
+    margin-bottom: 10px;
+  }
+
+  .hero-panel h2 {
+    font-size: 1rem;
+    letter-spacing: 0.07em;
+    margin-bottom: 8px;
+  }
+
+  .hero-panel p {
+    font-size: 0.88rem;
+    line-height: 1.48;
+  }
+
+  .hero-stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px;
+    margin-top: 14px;
+  }
+
+  .stat {
+    padding: 9px 8px;
+  }
+
+  .stat strong {
+    font-size: 1.18rem;
+  }
+
+  .stat span {
+    font-size: 0.56rem;
+    letter-spacing: 0.05em;
+  }
+
+  .control-deck {
+    margin: 18px 0 16px;
+    padding: 12px;
+  }
+
+  .search-box input {
+    min-height: 44px;
+    font-size: 0.9rem;
+  }
+
+  .section-heading {
+    margin: 22px 0 14px;
+  }
+
+  .section-heading h2 {
+    font-size: 1.25rem;
+  }
+
+  .section-heading p {
+    font-size: 0.66rem;
+  }
+
+  .map-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map-card {
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .map-card h3 {
+    font-size: 1.32rem;
+  }
+
+  .subtitle {
+    font-size: 0.93rem;
+  }
+
+  .description {
+    font-size: 0.91rem;
+  }
+
+  .meta-list li {
+    font-size: 0.6rem;
+  }
+
+  .card-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .open-link {
+    width: 100%;
+  }
+
+  .footer {
+    margin-top: 32px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 380px) {
+  .page-shell {
+    width: min(100% - 14px, var(--max));
+  }
+
+  .topbar {
+    grid-template-columns: 1fr;
+  }
+
+  .top-actions {
+    justify-content: flex-start;
+  }
+
+  .seal {
+    width: 40px;
+    height: 40px;
+  }
+
+  .brand-title {
+    font-size: 1.05rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .hero {
+    padding: 20px 14px;
+  }
+
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stat {
+    padding: 10px 12px;
+  }
+}
   </style>
 </head>
 <body>
@@ -1129,7 +1520,7 @@
         code: "MAP-003",
         title: "Mathematics",
         subtitle: "From number sense to structured problem solving",
-        description: "A progressive mathematics MAP for rebuilding fundamentals, pattern recognition, symbolic reasoning, and applied problem solving.",
+        description: "A progressive mathematics for rebuilding fundamentals, pattern recognition, symbolic reasoning, and applied problem solving.",
         url: "https://arfinmaulana.github.io/map-vault/mathematics/",
         locked: true,
         year: "2026",
@@ -1149,11 +1540,21 @@
         code: "MAP-005",
         title: "Keyboard & Workflow",
         subtitle: "Shortcut literacy for Windows, macOS, and custom keyboards",
-        description: "A practical workflow MAP for keyboard philosophy, shortcut systems, hidden gems, VIA/QMK basics, and cross-device productivity.",
+        description: "A practical workflow for keyboard philosophy, shortcut systems, hidden gems, VIA/QMK basics, and cross-device productivity.",
         url: "https://arfinmaulana.github.io/map-vault/keyboard-workflow/",
         locked: false,
         year: "2026",
         tags: ["keyboard", "shortcuts", "productivity"]
+      },
+      {
+        code: "MAP-006",
+        title: "Folder Structure",
+        subtitle: "Personal file organization, naming systems, and archive workflow",
+        description: "A practical organization for building clean folder systems, consistent file naming, archive logic, numbering strategy, and long-term digital workspace management.",
+        url: "https://arfinmaulana.github.io/map-vault/folder-structure/",
+        locked: true,
+        year: "2026",
+        tags: ["folders", "organization", "workflow"]
       }
     ];
 
